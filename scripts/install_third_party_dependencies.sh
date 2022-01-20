@@ -5,8 +5,8 @@ source scripts/vars.sh
 # Install Miniconda locally
 rm -rf lib/conda
 rm -f /tmp/Miniconda3-latest-Linux-x86_64.sh
-wget -q -P /tmp \
-    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+wget -P /tmp \
+    https://tentacruel.bb.schrodinger.com/public/conda_installer/Miniconda3-latest-Linux-x86_64.sh \
     && bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p lib/conda \
     && rm /tmp/Miniconda3-latest-Linux-x86_64.sh
 
