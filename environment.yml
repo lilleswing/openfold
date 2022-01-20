@@ -2,6 +2,7 @@ name: openfold_venv
 channels:
   - conda-forge
   - bioconda
+  - pytorch
 dependencies:
   - pip:
       - biopython==1.79
@@ -12,13 +13,13 @@ dependencies:
       - PyYAML==5.4.1
       - requests==2.26.0
       - scipy==1.7.1
-      - torch==1.10.0
       - tqdm==4.62.2
       - typing-extensions==3.10.0.2
       - pytorch_lightning==1.5.0
       - git+git://github.com/NVIDIA/dllogger.git
       - nvidia-pyindex
       - nvidia-dllogger
+  - pytorch::pytorch=1.10.*
   - conda-forge::python=3.7
   - conda-forge::openmm=7.5.1
   - conda-forge::pdbfixer
